@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+    color: #23272A;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+    text-align: left;
+    color: #23272A;
+}
+p, button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #23272A;
+}
+header {
+    background-image: url('img/header-background.png');
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    background-blend-mode: lighten;
+}
+img {
+    max-width: 100%;
+}
+button {
+    border-radius: 28px;
+    border-width: 0;
+    text-align: center;
+    padding: 1rem;
+}
+footer {
+    background-color: #23272A;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-content{
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem 1.5rem;
+    align-items: left;
+    gap: 1.5rem;
+}
+#header-content p, #header-content h1{
+    color: #FFFFFF;
+}
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#buttons #button-browser {
+    background-color: #23272A;
+    color: #FFFFFF;
+}
+#section-01, #section-02, #section-03, #section-04 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    justify-content: center;
+    align-items: left;
+    gap: 27px;
+}
+#section-02, #section-04 {
+    background-color: #F6F6F6;
+}
+.section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+footer #discord-logo {
+    width: 10.125rem;
+}
+@media screen and (min-width: 800px) {
+    * {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 62.5%;
+    }
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem
+    }
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3.375rem;
+    }
+    #header-content{
+        display: flex;
+        flex-direction: column;
+        padding: 6rem 15rem;
+        align-items: center;
+    }
+    #header-content h1, #header-content p, #section-04 h1, #section-04 p{
+        text-align: center;
+    }
+    #buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    #section-01, #section-02, #section-03, #section-04 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3.125rem 6.5rem;
+        gap: 1.5rem;
+    }
+    #section-01, #section-03 {
+        flex-direction: row;
+    }
+    #section-02 {
+        flex-direction: row-reverse;
+    }
+    #section-04 {
+        flex-direction: column;
+    }
+    footer #discord-logo {
+        width: 14.375rem;
+    }
+}
